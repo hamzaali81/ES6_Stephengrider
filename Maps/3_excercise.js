@@ -17,3 +17,20 @@ var heights = images.map(function (image) {
 })
 
 console.log(heights)
+paints = [{
+        color: 'red',
+    },
+    {
+        color: 'green'
+    }
+]
+
+function pluck(array, property) {
+    let pluck = array.map(function (arr) {
+        return arr[property]; //arr.property didn't work
+    })
+    return pluck
+
+}
+let x = pluck(paints, 'color')
+console.log(x)
