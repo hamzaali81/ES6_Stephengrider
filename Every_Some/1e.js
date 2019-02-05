@@ -21,5 +21,15 @@ for (let i = 0; i < computers.length; i++) {
         onlySomeComputersCanRunProgram = true
     }
 }
-console.log(allComputersCanRunProgram)
-console.log(onlySomeComputersCanRunProgram)
+// console.log(allComputersCanRunProgram)
+// console.log(onlySomeComputersCanRunProgram)
+
+let every = computers.every(computer => {
+    return computer.ram > 16
+})
+console.log(every)
+
+let some = computers.some((computer) => {
+    return computer.ram > 16
+})
+console.log(some)
