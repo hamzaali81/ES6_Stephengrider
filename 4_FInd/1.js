@@ -10,7 +10,7 @@ let users = [
     name:'qweerty'}
 ]
 
-let x = users.find(user=>{
+let x = users.findIndex(user=>{
     return user.name ==='Vidit'
 })
 
