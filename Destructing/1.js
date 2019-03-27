@@ -27,9 +27,11 @@
 // console.log(summary(Person))
 
 let companies =['Google','Uber','Facebook'];
+
 let [name] = companies;
 console.log(name)
 // let [length,yo,yooo] = companies
 // console.log(length + yo + yooo)
 let {length} = companies;
 console.log(length)
+
