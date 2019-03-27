@@ -18,3 +18,14 @@ const Google ={
 }
 const {locations:[location]} =Google
 console.log(location)
+
+const profile = {
+    title: 'Engineer',
+    department: 'Engineering'
+  };
+  
+  function isEngineer({title,department}) {
+    var title = title;
+    var department = department;
+    return title === 'Engineer' && department === 'Engineering';
+  }
